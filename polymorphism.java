@@ -3,7 +3,7 @@ public class polymorphism {
 
    public static void main(String[] args) {
    Method obj=new Method();
-    obj.display();
+    obj.display("dharshini");
     obj.display(5);
    }
 }
@@ -11,8 +11,8 @@ public class polymorphism {
   * Innerpolymorphism
   */
 class Method{
-     void display(){
-        System.out.println("dharshini");
+     void display(String v){
+        System.out.println("");
      }
      void display(int a){
         System.out.println(a);
