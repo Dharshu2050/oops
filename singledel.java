@@ -149,6 +149,32 @@ class linkedlist{
         }
 
     }*/
+
+
+    boolean Search(int key){
+        Node temp=head;
+        while (temp!=null) {
+            if(temp.data==key){
+                return true;
+            }
+            temp=temp.next;
+        }
+        return false;
+            
+        }
+
+        int frequency(int key){
+            Node temp=head;
+            int count=0;
+            while(temp!=null){
+                if(temp.data==key){
+                    count++;
+                }
+                temp=temp.next;
+            }return count;
+        }
+
+    
     void display(){
         Node temp=head;
         while(temp!=null){
@@ -176,6 +202,8 @@ public class singledel {
       
         
         obj.display();
+        System.out.println(obj.Search(10));
+        System.out.println(obj.frequency(10));
     }
 }
 
