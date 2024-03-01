@@ -150,7 +150,7 @@ class linkedlist{
 
     }*/
 
-
+//searching on element
     boolean Search(int key){
         Node temp=head;
         while (temp!=null) {
@@ -162,7 +162,7 @@ class linkedlist{
         return false;
             
         }
-
+//how many times the number present in the list
         int frequency(int key){
             Node temp=head;
             int count=0;
